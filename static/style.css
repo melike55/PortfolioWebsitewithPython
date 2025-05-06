@@ -1,0 +1,58 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Başlık stili */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+/* Liste stili */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Liste elemanları stili */
+ul li {
+    margin: 0 15px;
+}
+
+/* Link stili */
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link hover (üzerine gelindiğinde) stili */
+ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Mobil uyumluluk için duyarlı tasarım */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+}
